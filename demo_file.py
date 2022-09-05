@@ -41,22 +41,39 @@ print(type(tup))
 ### - ------------ OPPs ----------------------##
 
 ## Class
-class Man:
+class Student:
 
-     def __init__(self,name,age):
+     def __init__(self,name,age,height,weight,school_name):
         self.name = name
         self.age = age
-        #self.height =height
-        #self.weight =weight
+        self.height =height
+        self.weight =weight
+        self.school_name =school_name
 
      def name_of(self):
         print(f"name of this student is  {self.name}")
 
+     def GetAge(self):
+         print(f" Age  of the student is {self.age}")
+
+     def BMI_CAL(self):
+          print("BMI of the student:",self.height/self.weight)
+
+     def get_school_name(self):
+         print(f"school name {self.school_name} ",)
+
+
+
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    std = Man(name='rahul',age=18)
+    std = Student(name='rahul',age=18,height=120,weight=60,school_name="ABVP")
     std.name_of()
+    std.BMI_CAL()
+    std.get_school_name()
+    print(std.height)
+
+
 
 
 
