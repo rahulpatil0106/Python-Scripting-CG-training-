@@ -60,6 +60,8 @@ class Student:
           print("BMI of the student:",self.height/self.weight)
 
      def get_school_name(self):
+
+
          print(f"school name {self.school_name} ",)
 
 

@@ -2,6 +2,8 @@
 
 # Press Shift+F10 to execute it or replace it with your code.
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import sklearn.model_selection
+
 
 class Vehicle:
 
@@ -41,3 +43,8 @@ if __name__ == '__main__':
     vehicle_obj.fuel_up()
     vehicle_obj.drive()
 
+
+###
+from sklearn.linear_model import LinearRegression()
+
+from sklearn.metrics import classification_report()
