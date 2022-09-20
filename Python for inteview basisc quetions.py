@@ -81,6 +81,43 @@ sorted(my_tup)
 
 
 
+### Sort method
+
+##---sort() function is very similar to sorted() but unlike sorted it returns nothing and makes changes to the original sequence. Moreover, sort() is a method of list class and can only be used with lists.
+
+new_list = [12,32,4,45,22]
+new_list.sort(reverse=True)
+print(new_list)
+
+
+## itreable
+a=10
+for i in range(10):
+    print(a)
+
+b =[1,2,3,5]
+bb =iter(b)
+print(bb)
+print(next(bb))
+print(next(bb))
+
+
+
+### Genrators
+
+def get_inf_sequnece():
+    num =0
+    while True:
+        yield num
+        num+=1
+
+for i in get_inf_sequnece():
+    print(i)
+
+
+
+
+
 
 
 
